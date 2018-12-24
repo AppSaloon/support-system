@@ -165,6 +165,11 @@ final class Options {
             ,LOAD_THEME_ASSETS              = 'smartcat_support_load_theme_assets'
 
             /**
+             * @since 1.7.3
+             */
+            ,SENDER_SIGNATURE               = 'smartcat_support_sender_email_signature'
+
+            /**
              * @deprecated
              */
             ,SHOW_CLOCK                     = 'smartcat_support_show_clock'

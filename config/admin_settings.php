@@ -607,6 +607,17 @@ $email_notifications->add_field( new CheckBoxField(
         'desc'          => __( 'Name used for outgoing support emails', 'ucare' )
     )
 
+) )->add_field( new TextAreaField(
+    array(
+        'id'            => 'support_email_sender_signature',
+        'option'        => Options::SENDER_SIGNATURE,
+        'class'         => array( 'regular-text' ),
+        'props'         => array( 'rows' => array( 2 ) ),
+        'value'         => get_option( Options::SENDER_SIGNATURE  ),
+        'label'         => __( 'Sender Email Signature', 'ucare' ),
+        'desc'          => __( 'Email footer that will be appended to all user notification templates. HTML allowed', 'ucare' ),
+        'validators'    => array()
+    )
 ) );
 
 $advanced = new SettingsSection( 'uc_advanced', __( 'CAUTION: Some of these may bite', 'ucare' ) );
